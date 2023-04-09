@@ -1,4 +1,4 @@
-#Slack Message Sender ChatGPT Plugin Tutorial
+# Slack Message Sender ChatGPT Plugin Tutorial
 This plugin sends messages into a Slack channel when prompted in ChatGPT with a matching prompt. 
 
 ## Configuring this app 
