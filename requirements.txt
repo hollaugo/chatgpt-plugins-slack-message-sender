@@ -1,0 +1,4 @@
+httpx
+quart
+quart_cors
+python-dotenv

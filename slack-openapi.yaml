@@ -1,0 +1,34 @@
+openapi: 3.0.1
+info:
+  title: Slack Message Sender
+  description: A simple API to send messages to Slack using a webhook.
+  version: 'v1'
+servers:
+  - url: <YOUR Server URL eg. localhost:5002, a codespaces, replit or any other server>
+paths:
+  /send_slack_message/{message}:
+    post:
+      operationId: sendSlackMessage
+      summary: Send a message to Slack
+      parameters:
+      - in: path
+        name: message
+        schema:
+          type: string
+        required: true
+        description: The message to send to Slack.
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: OK
+        "400":
+          description: Failed to send message to Slack
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: Failed to send message to Slack

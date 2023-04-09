@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Slack Message Sender",
+    "name_for_model": "slack_sender",
+    "description_for_human": "Plugin for sending messages to the Slack ChatGPT Plugin Channel",
+    "description_for_model": "Plugin for sending messages to Slack via webhook.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "<YOUR SERVER URL>/.well-known/slack-openapi.yaml",
+        "is_user_authenticated": false
+    },
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Slack_Technologies_Logo.svg/400px-Slack_Technologies_Logo.svg.png",
+    "contact_email": "support@example.com",
+    "legal_info_url": "https://example.com/legal"
+}
